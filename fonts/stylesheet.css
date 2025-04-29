@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'GT Walsheim Trial Bl Ob';
+    src: url('GTWalsheimTrial-BlOb.woff2') format('woff2'),
+        url('GTWalsheimTrial-BlOb.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Bl';
+    src: url('GTWalsheimTrial-Bl.woff2') format('woff2'),
+        url('GTWalsheimTrial-Bl.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Bd Ob';
+    src: url('GTWalsheimTrial-BdOb.woff2') format('woff2'),
+        url('GTWalsheimTrial-BdOb.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Bd';
+    src: url('GTWalsheimTrial-Bd.woff2') format('woff2'),
+        url('GTWalsheimTrial-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn Bl Ob';
+    src: url('GTWalsheimTrial-CnBlOb.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnBlOb.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn Bd Ob';
+    src: url('GTWalsheimTrial-CnBdOb.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnBdOb.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn Bl';
+    src: url('GTWalsheimTrial-CnBl.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnBl.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn Bd';
+    src: url('GTWalsheimTrial-CnBd.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnBd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn Lt';
+    src: url('GTWalsheimTrial-CnLt.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnLt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn Lt Ob';
+    src: url('GTWalsheimTrial-CnLtOb.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnLtOb.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn Md Ob';
+    src: url('GTWalsheimTrial-CnMdOb.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnMdOb.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn Md';
+    src: url('GTWalsheimTrial-CnMd.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnMd.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn Rg';
+    src: url('GTWalsheimTrial-CnRg.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnRg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn Rg Ob';
+    src: url('GTWalsheimTrial-CnRgOb.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnRgOb.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn Th Ob';
+    src: url('GTWalsheimTrial-CnThOb.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnThOb.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn Th';
+    src: url('GTWalsheimTrial-CnTh.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnTh.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn U Bd Ob';
+    src: url('GTWalsheimTrial-CnUBdOb.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnUBdOb.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn U Bd';
+    src: url('GTWalsheimTrial-CnUBd.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnUBd.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn U Lt Ob';
+    src: url('GTWalsheimTrial-CnULtOb.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnULtOb.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Cn U Lt';
+    src: url('GTWalsheimTrial-CnULt.woff2') format('woff2'),
+        url('GTWalsheimTrial-CnULt.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Lt Ob';
+    src: url('GTWalsheimTrial-LtOb.woff2') format('woff2'),
+        url('GTWalsheimTrial-LtOb.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Lt';
+    src: url('GTWalsheimTrial-Lt.woff2') format('woff2'),
+        url('GTWalsheimTrial-Lt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Md';
+    src: url('GTWalsheimTrial-Md.woff2') format('woff2'),
+        url('GTWalsheimTrial-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Md Ob';
+    src: url('GTWalsheimTrial-MdOb.woff2') format('woff2'),
+        url('GTWalsheimTrial-MdOb.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Rg Ob';
+    src: url('GTWalsheimTrial-RgOb.woff2') format('woff2'),
+        url('GTWalsheimTrial-RgOb.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Rg';
+    src: url('GTWalsheimTrial-Rg.woff2') format('woff2'),
+        url('GTWalsheimTrial-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Th';
+    src: url('GTWalsheimTrial-Th.woff2') format('woff2'),
+        url('GTWalsheimTrial-Th.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Th Ob';
+    src: url('GTWalsheimTrial-ThOb.woff2') format('woff2'),
+        url('GTWalsheimTrial-ThOb.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial U Bd Ob';
+    src: url('GTWalsheimTrial-UBdOb.woff2') format('woff2'),
+        url('GTWalsheimTrial-UBdOb.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial U Bd';
+    src: url('GTWalsheimTrial-UBd.woff2') format('woff2'),
+        url('GTWalsheimTrial-UBd.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
