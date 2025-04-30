@@ -80,8 +80,8 @@ function keyPressed() {
 
 function touchMoved() {
     const insideCanvas = mouseX >= 0 && mouseX <= width && mouseY >= 0 && mouseY <= height;
-
-  if (insideCanvas && !overToolIcons(mouseX, mouseY)) {
+  const fingerIsDrawing = touches.length > 0 && touches[0].x >= 0 && touches[0].x <= width;
+    if (insideCanvas && fingerIsDrawing && !overToolIcons(mouseX, mouseY)) {
     strokeWeight(3);
     stroke(currentColor);
     line(mouseX, mouseY, pmouseX, pmouseY);
