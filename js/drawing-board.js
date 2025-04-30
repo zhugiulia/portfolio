@@ -87,7 +87,12 @@ function touchMoved() {
     line(mouseX, mouseY, pmouseX, pmouseY);
         return false;
   }
+<<<<<<< HEAD
   return true;
+=======
+  window.scrollBy(0, 1); // Helps enable scrolling on touch
+  return false;
+>>>>>>> 9670edf (Update portfolio)
 }
 
 function windowResized() {
