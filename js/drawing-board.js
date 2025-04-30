@@ -84,6 +84,7 @@ function touchMoved() {
     stroke(currentColor);
     line(mouseX, mouseY, pmouseX, pmouseY);
   }
+  window.scrollBy(0, 1); // Helps enable scrolling on touch
   return false;
 }
 
