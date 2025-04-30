@@ -79,13 +79,15 @@ function keyPressed() {
 }
 
 function touchMoved() {
-  if (!overToolIcons(mouseX, mouseY)) {
+    const insideCanvas = mouseX >= 0 && mouseX <= width && mouseY >= 0 && mouseY <= height;
+
+  if (insideCanvas && !overToolIcons(mouseX, mouseY)) {
     strokeWeight(3);
     stroke(currentColor);
     line(mouseX, mouseY, pmouseX, pmouseY);
+        return false;
   }
-  window.scrollBy(0, 1); // Helps enable scrolling on touch
-  return false;
+  return true;
 }
 
 function windowResized() {
