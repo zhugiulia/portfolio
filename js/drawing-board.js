@@ -30,20 +30,18 @@ function setup() {
 }
 
 function draw() {
-  // clear(); // Prevent icon overlap (removed to preserve drawings)
   push();
   noStroke();
   fill(255);
   rect(0, 60, 100, 250); // clear vertical icon area
   pop();
-  // Draw tool icons
+
   imageMode(CENTER);
   image(redIcon, 33 + (currentColor === 'red' ? 10 : 0), 80, 66, 43);
   image(greenIcon, 33 + (currentColor === 'green' ? 10 : 0), 140, 66, 43);
   image(blueIcon, 33 + (currentColor === 'blue' ? 10 : 0), 200, 66, 43);
   image(rubberIcon, 33 + (currentColor === 'white' ? 10 : 0), 260, 66, 43);
 
-  // Drawing
   if (mouseIsPressed && !overToolIcons(mouseX, mouseY)) {
     strokeWeight(3);
     stroke(currentColor);
@@ -79,20 +77,17 @@ function keyPressed() {
 }
 
 function touchMoved() {
-    const insideCanvas = mouseX >= 0 && mouseX <= width && mouseY >= 0 && mouseY <= height;
+  const insideCanvas = mouseX >= 0 && mouseX <= width && mouseY >= 0 && mouseY <= height;
   const fingerIsDrawing = touches.length > 0 && touches[0].x >= 0 && touches[0].x <= width;
-    if (insideCanvas && fingerIsDrawing && !overToolIcons(mouseX, mouseY)) {
+
+  if (insideCanvas && fingerIsDrawing && !overToolIcons(mouseX, mouseY)) {
     strokeWeight(3);
     stroke(currentColor);
     line(mouseX, mouseY, pmouseX, pmouseY);
-        return false;
+    return false; // evita lo scroll durante il disegno
   }
-<<<<<<< HEAD
-  return true;
-=======
-  window.scrollBy(0, 1); // Helps enable scrolling on touch
-  return false;
->>>>>>> 9670edf (Update portfolio)
+
+  return true; // consente lo scroll se non si disegna
 }
 
 function windowResized() {
