@@ -13,6 +13,8 @@ body {
   color: #333;
   background-color: #fafafa;
   cursor: url('../assets/cursor.svg'), auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 p {
@@ -83,6 +85,13 @@ footer {
   width: 90px;
   height: auto;
   z-index: 1;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
 
 @keyframes float1 {
@@ -579,6 +588,7 @@ td {
   max-height: 520px;
   border-radius: 16px;
   object-fit: cover;
+  clip-path: inset(1px 0 1px 0); /* crop 1px from top and bottom */
 }
 
 /* Make sure images scale responsively */
@@ -669,9 +679,214 @@ body.ripples-page th {
 }
 
 
-.video-problems {
+
+.highlight-orange {
+  background-color: #FF8845;
+  color: #fff;
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+
+.video-feedback {
   width: 100%;
-  height: 560px;
+  height: 300px;
   object-fit: cover;
   border-radius: 16px;
+}
+
+.ecg-box {
+  background-color: #f5f5f5;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+
+
+@media (max-width: 576px) {
+  .row.align-items-stretch.g-4 > .col-12 {
+    margin-bottom: 2rem;
+  }
+
+  .row.text-center.text-md-start.g-4 > .col-12 {
+    margin-bottom: 2rem;
+  }
+
+  .row .col-md-4,
+  .row .col-md-3,
+  .row .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  h5.fw-bold {
+    text-align: left !important;
+  }
+
+  p {
+    text-align: left !important;
+  }
+}
+
+/* Responsive override for ECG images */
+.responsive-img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .responsive-img {
+    max-height: 240px;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+
+.caption {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  color: #a3a3a3;
+  caption-side: bottom; /* or 'top' */
+  padding: 0.5rem 0;
+}
+
+
+@media (max-width: 576px) {
+  .sign-img {
+    width: 50% !important;
+    height: auto !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6rem; 
+    padding-left: 8rem; 
+    padding-right: 8rem; 
+  }
+}
+@media (max-width: 576px) {
+.eye-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 4rem;
+}
+}
+
+
+  .auto-scroll-gallery {
+    display: flex;
+    overflow: hidden;
+    gap: 2rem;
+    animation: scroll-left 60s linear infinite;
+    width: max-content;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .gallery-item {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .gallery-item img {
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .gallery-caption {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 0.5rem;
+  }
+
+body.unity-page table.project-info-table,
+body.unity-page td,
+body.unity-page th {
+  background-color: #FFFDF9 !important;
+}
+
+.custom-cursor {
+  cursor: url('../assets/me.cursor.png')24 24, auto;
+}
+
+.pen-cursor {
+  cursor: url('../assets/pen.cursor.png')24 24, auto;
+}
+
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  40%  { opacity: 0; }
+  50%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadeOut {
+  0%   { opacity: 1; }
+  40%  { opacity: 1; }
+  50%  { opacity: 0; }
+  90%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-wrapper {
+  position: relative;
+}
+
+.fade-wrapper img {
+  transition: opacity 1s ease-in-out;
+  pointer-events: none;
+}
+
+/* Added floating flags for bento section */
+
+.floating-flags {
+  position: relative;
+  width: 100%;
+  height: 0;
+  z-index: 0;
+}
+
+.floating-flag {
+  position: absolute;
+  width: 70px;
+  animation: floatRandom 5s ease-in-out infinite alternate;
+}
+
+.flag-china {
+  top: -80px;
+  left: 5%;
+}
+
+.flag-italy {
+  top: -250px;
+  left: 75%;
+}
+
+@keyframes floatRandom {
+  0% {
+    transform: translate(0, 20px);
+  }
+  50% {
+    transform: translate(10px, -15px);
+  }
+  100% {
+    transform: translate(-10px, 50px);
+  }
 }
