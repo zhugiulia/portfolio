@@ -793,10 +793,13 @@ body.ripples-page th {
     }
   }
 
-  .scroll-container {
-    overflow: hidden;
-    white-space: nowrap;
-  }
+.scroll-container {
+  height: 350px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
 
   .gallery-item {
     display: inline-block;
