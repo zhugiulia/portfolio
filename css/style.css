@@ -13,9 +13,60 @@ body {
   color: #333;
   background-color: #fafafa;
   cursor: url('../assets/cursor.svg'), auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
+/* Custom hand cursor on hover for interactive elements */
+a,
+a:hover,
+a:active,
+a:focus,
+button,
+button:hover,
+button:active,
+button:focus,
+.navbar-toggler,
+.navbar-toggler:hover,
+.navbar-toggler:active,
+.navbar-toggler:focus,
+.nav-link,
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus,
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:active,
+.navbar-brand:focus,
+.what-else-btn,
+.what-else-btn:hover,
+.what-else-btn:active,
+.what-else-btn:focus,
+.project-card,
+.project-card:hover,
+.project-card:active,
+.project-card:focus,
+.contact-icon,
+.contact-icon:hover,
+.contact-icon:active,
+.contact-icon:focus,
+[role="button"],
+[role="button"]:hover,
+[role="button"]:active,
+[role="button"]:focus,
+input[type="button"],
+input[type="button"]:hover,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="submit"],
+input[type="submit"]:hover,
+input[type="submit"]:active,
+input[type="submit"]:focus,
+input[type="reset"],
+input[type="reset"]:hover,
+input[type="reset"]:active,
+input[type="reset"]:focus {
+  cursor: url('../assets/hand.svg'), pointer;
+}
+
+
 
 p {
   font-family: 'Inter', sans-serif;
@@ -78,6 +129,8 @@ footer {
   text-align: center;
   padding: 2rem 0;
 }
+
+
 
 
 .floating-icon {
@@ -882,6 +935,50 @@ body.unity-page th {
   left: 75%;
 }
 
+.floating-drawing {
+  position: fixed;
+  width: 260px;          /* smaller, only the drawing area */
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  pointer-events: none;  /* don’t block clicks on content behind */
+  animation-name: floatDrawing;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  mix-blend-mode: multiply;
+}
+
+/* Random-ish wandering around the viewport */
+@keyframes floatDrawing {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0) rotate(0deg) scale(0.9);
+    opacity: 0;
+  }
+  15% {
+    transform: translate(-50%, -50%) translate(5vw, -5vh) rotate(3deg) scale(1);
+    opacity: 1;
+  }
+  35% {
+    transform: translate(-50%, -50%) translate(-10vw, 10vh) rotate(-4deg) scale(1.02);
+  }
+  55% {
+    transform: translate(-50%, -50%) translate(8vw, 18vh) rotate(2deg) scale(0.98);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(-6vw, -12vh) rotate(-3deg) scale(1.01);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 5vh) rotate(1deg) scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+
 @keyframes floatRandom {
   0% {
     transform: translate(0, 20px);
@@ -891,5 +988,71 @@ body.unity-page th {
   }
   100% {
     transform: translate(-10px, 50px);
+  }
+}
+
+.system-tab {
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+}
+
+.system-tab img {
+  height: 65px;              /* regola se vuoi più grande/piccolo */
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+
+
+.system-tab:not(.active) img {
+  opacity: 0.3;              /* icona “spenta” */
+}
+
+.system-tab.active img {
+  opacity: 1;
+  transform: translateY(-2px);  /* leggero “salto” */
+}
+
+.system-tab.active span {
+  font-weight: 600;
+}
+
+.system-panel {
+  display: none;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.system-panel.active {
+  display: block;
+}
+
+.layer-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  color: #0b3960; /* soft grey */
+  margin-top: 0.25rem;
+}
+
+.layer-arrow {
+  font-size: 20px;
+  animation: layer-arrow-bounce 1.2s infinite ease-in-out;
+}
+
+@keyframes layer-arrow-bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(4px);
+    opacity: 1;
   }
 }
